@@ -1,0 +1,1000 @@
+  236  sudo ifconfig
+  237  ifconfig
+  238  ip a
+  239  ifconfig
+  240  sudo apt install net-tools
+  241  sudo ifconfig en0 down
+  242  sudo ifconfig en1
+  243  ifconfig
+  244  sudo ifconfig eno1
+  245  sudo ifconfig eno1 down
+  246  sudo ifconfig eno1 up
+  247  ll
+  248  ifconfig
+  249  aws
+  250  aws configure
+  251  aws iam list-users
+  252  cd ~/Downloads/
+  253  ls
+  254  cat credentials\ \(1\).csv 
+  255  aws configure
+  256  aws iam list-users
+  257  cd 
+  258  cd aws
+  259  mkdir aws
+  260  cd aws/
+  261  ls
+  262  aws ec2 describe-images
+  263  aws ec2 describe-images --filters "Name=description,Values=Amazon Linux AMI * x86_64 HVM GP2" --query 'Images[*].[Create
+  264  aws ec2 describe-images --filters "Name=description,Values=Amazon Linux AMI * x86_64 HVM GP2" --query 'Images[*].[CreationDate, Description, ImageId]' --output text | sort -k 1 | tail
+  265  vi list_ami.sh
+  266  chmod +x list_ami.sh 
+  267  ./list_ami.sh 
+  268  aws ec2 describe-vpcs
+  269  aws ec2 describe-vpcs | less
+  270  aws ec2 create-security-group --group-name HelloWorld --description "Hello World Demo" --vpc-id vpc-0be1704ca8548a8ea
+  271  aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 22 --cidr 0.0.0.0/0 
+  272  aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 22 --cidr 0.0.0.0/0 --vpc-id vpc-0be1704ca8548a8ea
+  273  aws ec2 authorize-security-group-ingress 
+  274  aws ec2 authorize-security-group-ingress --help
+  275  aws ec2 authorize-security-group-ingress help
+  276  aws ec2 create-security-group --group-name HelloWorld --description "Hello World Demo" --vpc-id vpc-0be1704ca8548a8ea
+  277  aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 22 --cidr 0.0.0.0/0
+  278  aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 3000 --cidr 0.0.0.0/0
+  279  aws  ec2 describe-secuirty-groups --group-names HelloWorld --output text
+  280  aws  ec2 describe-secuirty-groups help
+  281  aws ec2 authorize-security-group-ingress help
+  282  aws ec2 authorize-security-group-ingress --group-name HelloWorld --protocol tcp --port 3000 --cidr 0.0.0.0/0
+  283  aws ec2 authorize-security-group-ingress --group-id sg-029447a7feba1b4c8 --protocol tcp --port 3000 --cidr 0.0.0.0/0
+  284  aws ec2 authorize-security-group-ingress --group-id sg-029447a7feba1b4c8 --protocol tcp --port 22 --cidr 0.0.0.0/0
+  285  vi commands-worked.txt
+  286  aws  ec2 describe-secuirty-groups --group-names HelloWorld --output text
+  287  aws  ec2 describe-secuirty-groups --group-name HelloWorld --output text
+  288  aws  ec2 describe-secuirty-groups --group-names HelloWorld --output text
+  289  aws  ec2 describe-secuirty-groups --group-id aws ec2 authorize-security-group-ingress --group-id sg-029447a7feba1b4c8 --protocol tcp --port 3000 --cidr 0.0.0.0/0 HelloWorld --output text
+  290  cat commands-worked.txt 
+  291  aws  ec2 describe-secuirty-groups --group-id sg-029447a7feba1b4c8 --output text
+  292  aws  ec2 describe-secuirty-groups --group-id sg-029447a7feba1b4c8 
+  293  aws  ec2 describe-secuirty-groups help
+  294  aws  ec2 describe-security-groups help
+  295  aws  ec2 describe-security-groups --group-names HelloWorld
+  296  cat commands-worked.txt 
+  297  aws  ec2 describe-security-groups --group-id sg-029447a7feba1b4c8
+  298  aws  ec2 describe-security-groups --group-id sg-029447a7feba1b4c8 --output text
+  299  aws  ec2 describe-secuirty-groups --group-id sg-029447a7feba1b4c8 --output text
+  300  aws  ec2 describe-security-groups --group-id sg-029447a7feba1b4c8 --output text
+  301  vi commands-worked.txt 
+  302  vi gen-ssh.txt
+  303  clear
+  304  ls -lrt
+  305  cd Downloads/
+  306  ls
+  307  mv 3-tier-app-aws-terraform-master.zip ~/terraform/course/
+  308  ls
+  309  cd ~/terraform/course/
+  310  ls
+  311  unzip 3-tier-app-aws-terraform-master.zip 
+  312  cd 3-tier-app-aws-terraform-master/
+  313  ls
+  314  ls -lrt
+  315  vi ec2.tf 
+  316  ls
+  317  cd 
+  318  ls -lrt
+  319  cd terraform/
+  320  ls
+  321  ls -lrt
+  322  cd course/
+  323  ls
+  324  cd demo-3/
+  325  ls
+  326  ls -lrt
+  327  vi vars.tf 
+  328  ls
+  329  ls -lrt
+  330  cat /etc/environment
+  331  cd 
+  332  ls
+  333  vi .bashrc 
+  334  cd -
+  335  ls
+  336  vi instance.tf 
+  337  cd ../
+  338  ls
+  339  cd demo-1
+  340  ls
+  341  ls -lrt
+  342  vi aws_access.txt 
+  343  terraform init
+  344  terraform clean
+  345  clear
+  346  ls -lrt
+  347  rm terraform.tfstate.backup 
+  348  clear
+  349  l
+  350  ll
+  351  ls
+  352  vi vars.tf 
+  353  rm -rf .terraform/
+  354  clear
+  355  terraform clear
+  356  ls
+  357  terraform clean
+  358  terraform init
+  359  terraform apply
+  360  ls
+  361  ls -lrt
+  362  vi vars.tf 
+  363  vi instance.tf 
+  364  ls
+  365  vi provider.tf 
+  366  vi vars.tf 
+  367  cd ../demo-2
+  368  ls
+  369  ls -lrt
+  370  vi instance.tf 
+  371  vi vars.tf 
+  372  vi script.sh 
+  373  terraform init
+  374  terraform apply
+  375  terraform destroy
+  376  cd ../
+  377  ls
+  378  cd first-steps/
+  379  ls
+  380  vi instance.tf 
+  381  vi versions.tf 
+  382  cd ../
+  383  ls
+  384  ls -lrt
+  385  cd demo-1
+  386  ls
+  387  ls -lrt
+  388  vi terraform.tf
+  389  vi provider.tf 
+  390  vi vars.tf 
+  391  cat aws_access.txt 
+  392  cd ../first-steps/
+  393  terraform apply
+  394  terrafom destroy
+  395  clear
+  396  ls -l
+  397  terraform apply
+  398  ls
+  399  vi terraform.tfstate
+  400  vi instance.tf 
+  401  terraform apply
+  402  cd ../
+  403  ls
+  404  cd demo-2
+  405  ls
+  406  ls -lrt
+  407  vi genratesshkey.sh 
+  408  vi vars.tf 
+  409  vi versions.tf 
+  410  vi provider.tf 
+  411  vi terraform.tfvars 
+  412  clear
+  413  vi vars.tf 
+  414  cd ../first-steps/
+  415  ls
+  416  ls -lrt
+  417  rm terraform.tfstate.backup 
+  418  clear
+  419  ls -lrt
+  420  rm terraform.tfstate 
+  421  clear
+  422  terraform init
+  423  terraform apply
+  424  cd ../demo-2
+  425  ls
+  426  vi vars.tf 
+  427  vi provider.tf 
+  428  ls
+  429  ls -lrt
+  430  vi terraform.tfvars 
+  431  v vars.tf 
+  432  vi vars.tf 
+  433  ll
+  434  vi instance.tf 
+  435  vi script.sh 
+  436  clear
+  437  ll
+  438  vi instance.tf 
+  439  cd ../demo-3/
+  440  ls
+  441  vi instance.tf 
+  442  exit
+  443  ls
+  444  sudo apt-get install terminator
+  445  clear
+  446  cat /etc/fstab 
+  447  cat /etc/hostname 
+  448  cat /proc/cpuinfo 
+  449  clear
+  450  grep -E --color 'vmx|svm' /proc/cpuinfo
+  451  sudo -i
+  452  minikube start
+  453  clear
+  454  ll
+  455  clear
+  456  ls -lrt
+  457  cd kube/
+  458  ls
+  459  ls -l
+  460  vi docker_env.sh 
+  461  chmod +x docker_env.sh 
+  462  ./docker_env.sh 
+  463  kubectl version
+  464  cat /proc/cpuinfo 
+  465  lscpu 
+  466  docker images
+  467  sudo docker images
+  468  sudo docker oull nginx
+  469  sudo docker pull nginx
+  470  sudo docker network ls
+  471  sudo docker network create -d bridge test-net
+  472  sudo docker network ls
+  473  sudo docker images 
+  474  sudo docker run -d -p 8080:80 --name nginx-1 nginx
+  475  sudo docker inspect nginx-1
+  476  sudo docker run -d -p 8081:80 --name nginx-2 nginx
+  477  sudo docker ps
+  478  sudo docker inspect nginx-2
+  479  sudo docker inspect nginx-1
+  480  sudo docker inspect nginx-2
+  481  docker exec -it nginx-1 sh
+  482  sudo docker exec -it nginx-1 sh
+  483  sudo docker exec -it nginx-2 sh
+  484  sudo docker exec -it nginx-2 bash
+  485  sudo docker pull nginx:alpine
+  486  sudo docker ps
+  487  sudo docker stop c6640b84388f c123ad9e8ca6
+  488  sudo docker ps
+  489  sudo docker images ls
+  490  sudo docker images
+  491  sudo docker run -d -p 8080:80 --name nginx-2 nginx:alpine
+  492  sudo docker run -d -p 8080:80 --name nginx-1 nginx:alpine
+  493  sudo docker run -d -p 8080:80 --name nginx-2 nginx:alpine
+  494  sudo docker run -d -p 8080:80 --name nginx-3 nginx:alpine
+  495  sudo docker run -d -p 8081:80 --name nginx-4 nginx:alpine
+  496  sudo docker exec -it nginx-3 bash
+  497  sudo docker exec -it nginx-3 sh
+  498  sudo docker ps
+  499  sudo docker stop e597e0c29a68
+  500  sudo docker stop d9baeeb42e01
+  501  sudo docker container ls
+  502  sudo docker images
+  503  sudo docker images ls
+  504  sudo docker containers
+  505  sudo docker container
+  506  sudo docker container ls
+  507  sudo docker ps
+  508  sudo docker image ls
+  509  sudo docker image 
+  510  sudo docker run -d -p 8080:80 --network=test-net --name nginx-4 nginx:alpine
+  511  sudo -i
+  512  mkdir docker
+  513  cd docker/
+  514  ls
+  515  history | tee docker-networking.sh
+  516  ls
+  517  cd docker/
+  518  ls
+  519  cd ../
+  520  cd Documents/
+  521  ls
+  522  cd ../
+  523  ls
+  524  clear
+  525  ll
+  526  mkdir udemy
+  527  cd udemy/
+  528  ls
+  529  clear
+  530  ls -lrt
+  531  mkdir kub-micro
+  532  cd kub-micro/
+  533  ls
+  534  pwd
+  535  unzip original.zip 
+  536  ls
+  537  ls -lrt
+  538  mv Chapter\ 5\ Pods/ chap5Pods
+  539  cd chap5Pods/
+  540  ls
+  541  ls -lrt
+  542  vi first-pod.yaml 
+  543  cd ../../
+  544  mkdir docker
+  545  cd docker/
+  546  clear
+  547  docker -version
+  548  docker --version
+  549  docker run hello-world
+  550  sudo docker run hello-world
+  551  docker ps
+  552  sudo docker ps
+  553  docker images
+  554  sudo docker images
+  555  sudo a+x /var/run/docker.sock 
+  556  sudo chmod a+x /var/run/docker.sock 
+  557  docker images
+  558  sudo chmod a+x /var/run/docker.sock 
+  559  ls -l /var/run/docker
+  560  sudo ls -l /var/run/docker.sock 
+  561  sudo chown -R docker:docker /var/run/docker.sock 
+  562  sudo chown docker:docker /var/run/docker.sock 
+  563  sudo chrown docker:docker /var/run/docker.sock 
+  564  sudo chown docker:docker /var/run/docker.sock 
+  565  sudo ls -l /var/run/docker.sock 
+  566  ls -l /var/run/docker
+  567  sudo usermod -aG docker $USER
+  568  newgrp docker
+  569  cd Downloads/
+  570  ls
+  571  ls -lrt
+  572  mv original.zip /home/sunkube/udemy/kub-micro
+  573  echo $USER
+  574  sudo usermod -aG docker $USER
+  575  sudo systemctl restart docker
+  576  docker ps
+  577  docker images
+  578  docker run busybox echo hi there
+  579  docker run busybox echo how you  there
+  580  docker run busybox echo bye there
+  581  docker run busybox ls
+  582  history | grep docker | busybox-cmd.txt
+  583  history | grep docker | tee busybox-cmd.txt
+  584  docker run busybox ls
+  585  docker run hell-world ls
+  586  docker run hell-world echo hi there
+  587  docker ps
+  588  ansible
+  589  sdo apt install ansible
+  590  sudo apt-get update
+  591  sudo apt-get update -y
+  592  sudo apt-get install ansible -y
+  593  sudo apt-get install ansible 
+  594  top
+  595  sudo apt-get install ansible 
+  596  ls
+  597  cd docker/
+  598  ls
+  599  mkdir Jenkin-Install
+  600  cd Jenkin-Install/
+  601  sl
+  602  ls
+  603  wget https://raw.githubusercontent.com/wardviaene/jenkins-course/master/scripts/install-jenkins.sh
+  604  scp mramaiah@192.168.1.81:/home/mramaiah/Downloads/original.bz2 .
+  605  scp mramaiah@192.168.1.81/home/mramaiah/Downloads/original.bz2 .
+  606  scp mramaiah@192.168.1.81:/home/mramaiah/Downloads/original.bz2 .
+  607  ip a
+  608  uname
+  609  whoami
+  610  cp ../../original.bz2 .
+  611  ls
+  612  rm original.bz2 
+  613  cd ../
+  614  ls
+  615  rm -rf Jenkin-Install/
+  616  ls
+  617  cd ../
+  618  ls
+  619  ls -lrt
+  620  unzip original3.zip 
+  621  ls -lrt
+  622  cd docker/
+  623  ls
+  624  cd ../
+  625  ls
+  626  unzip original3.zip 
+  627  ls -lrt
+  628  docker images
+  629  docker
+  630  docker images
+  631  service docker ps
+  632  service docker status
+  633  service docker start
+  634  service docker ps
+  635  docker images
+  636  cd docker/
+  637  ls
+  638  mkdir jenkins
+  639  pwd
+  640  ls
+  641  mv ../original3.zip .
+  642  unzip original3.zip 
+  643  ls
+  644  ls -lrt
+  645  cd jenkins/
+  646  ls
+  647  ls -lrt
+  648  vi docker-compose.yml 
+  649  cp docker-compose.yml docker-compose.yml-jenkins-centos.bak
+  650  vi docker-compose.yml
+  651  mkdir jenkins_home
+  652  vi docker-compose.yml
+  653  docker images
+  654  docker image rm bf5efd80d36f
+  655  docker image purge
+  656  docker image prune
+  657  docker images
+  658  docker image rm bf5efd80d36f
+  659  docker image delete bf5efd80d36f
+  660  docker delete bf5efd80d36f
+  661  ls -l
+  662  sudo chown 1000:1000 jenkins_home -R
+  663  ll
+  664  vi script.sh 
+  665  ls
+  666  mkdir jobs
+  667  cd jobs/
+  668  cd ../
+  669  ls
+  670  mv jobs/ my-scripts
+  671  mv script.sh parameters.sh
+  672  mv parameters.sh my-scripts/
+  673  cd my-scripts/
+  674  pwd
+  675  ls
+  676  cd kube/
+  677  ls
+  678  cd ud
+  679  cd ../udemy/
+  680  ls
+  681  cd kub-micro/
+  682  ls
+  683  cd chap5Pods/
+  684  sl
+  685  ls
+  686  sudo systemctl stop kubelet
+  687  sudo systemctl status kubelet
+  688  which kube-apiserver
+  689  whereis kube-apiserver
+  690  locate kube-apiserver
+  691  cd /usr/local/bin/
+  692  ls
+  693  ./kubectl stop
+  694  ls -l
+  695  ls -lh
+  696  whereis kubectl
+  697  sudo systemctl stop kubelet.service
+  698  kubectl get pod
+  699  minikube status
+  700  minikube stop
+  701  65;1;9c1;1;120;120;1;0x65;1;9c1;1;120;120;1;0x
+  702  minikube status
+  703  minikube dashboard
+  704  sudo cat /etc/fstab 
+  705  fdisk -l
+  706  sudo fdisk -l
+  707  sudo cat /etc/fstab 
+  708  lsblk -a
+  709  cat /proc/swaps
+  710  sudo apt-get update
+  711  sudo apt-get install gparted && sudo gparted
+  712  sudo gparted
+  713  sudo swapon -s
+  714  size="8G" && file_swap=/swapfile_$size.img && sudo touch $file_swap && sudo fallocate -l $size /$file_swap && sudo mkswap /$file_swap && sudo swapon -p 20 /$file_swap
+  715  ls /swapfile_8G.img 
+  716  sudo rm -rf /swapfile_8G.img 
+  717  sudo rm -rf Swapfile_8G.img 
+  718  sudo rm -rf swapfile_8G.img 
+  719  sudo rm -rf /swapfile_8G.img 
+  720  ls -l /swapfile_8G.img 
+  721  chmod -R 0600 /swapfile_8G.img 
+  722  sudo chmod -R 0600 /swapfile_8G.img 
+  723  size="8G" && file_swap=/swapfile_$size.img && sudo touch $file_swap && sudo fallocate -l $size /$file_swap && sudo mkswap /$file_swap && sudo swapon -p 20 /$file_swap
+  724  cat /etc/fstab 
+  725  snap remove kubectl 
+  726  sudo snap remove minikube
+  727  sudo snap remove kube*
+  728  sudo snap remove minikube
+  729  sudo rm /usr/local/bin/kubectl 
+  730  sudo rm /usr/local/bin/minikube 
+  731  clear
+  732  docker ps
+  733  cd docker/
+  734  ls
+  735  cd jenkins
+  736  docker-compose up -d
+  737  docker ps
+  738  free -g
+  739  free -h
+  740  df -h
+  741  du -k
+  742  du -kh
+  743  df -h
+  744  df
+  745  df -hT /
+  746  df -hT /HOME
+  747  df -hT /home
+  748  df -m
+  749  top
+  750  sudo snap remove kubelet
+  751  sudo apt-get remove kube-*
+  752  sudo apt-get remove kubelet
+  753  sudo snap remove kubelet
+  754  sudo /usr/local/bin/
+  755  sudo ls -l/usr/local/bin/
+  756  sudo ls -l /usr/local/bin/
+  757  sudo find / -name kube-*
+  758  sudo snap remove microk8s
+  759  clear
+  760  cd docker/
+  761  ls
+  762  cd jenkins
+  763  docker-compose up -d
+  764  cd docker/
+  765  cd jenkins
+  766  docker-compose up -d
+  767  clear
+  768  docker ps
+  769  free -gt
+  770  uname -rmo
+  771  git
+  772  clear
+  773  l
+  774  ls
+  775  mkdir code
+  776  cd code/
+  777  ls
+  778  cd ../
+  779  git clone https://github.com/jenkins-docs/simple-java-maven-app.git
+  780  ls
+  781  cd simple-java-maven-app/
+  782  ls
+  783  ls -l
+  784  cd ../
+  785  clear
+  786  ll
+  787  git clone git clone http://gitlab.example.com/jenkins/maven.git
+  788  clear
+  789  git clone http://gitlab.example.com/jenkins/maven.git
+  790  git clone http://gitlab.example.com:8090/jenkins/maven.git
+  791  git clone http://manju:12345678gitlab.example.com:8090/jenkins/maven.git
+  792  git clone http://manju:12345678@gitlab.example.com:8090/jenkins/maven.git
+  793  git clone http://manjuhr:12345678@gitlab.example.com:8090/jenkins/maven.git
+  794  ls
+  795  cd maven/
+  796  ls
+  797  clear
+  798  ls
+  799  cp -r ../simple-java-maven-app/* .
+  800  ls
+  801  git status
+  802  git add .
+  803  git commit -m "Initial commit"
+  804  git push -u origin master
+  805  cd ../
+  806  clear
+  807  docker ps
+  808  history 
+  809  clear
+  810  cd maven/
+  811  ls
+  812  git status
+  813  cd ../
+  814  ls
+  815  vi docker-compose.yml
+  816  cd /srv/gitlab/
+  817  ls
+  818  cd ../
+  819  ls
+  820  cd gitlab/data/
+  821  ls
+  822  cd redis/
+  823  cd gitlab-ci/
+  824  ls
+  825  cd ../
+  826  ls
+  827  cd git-data/
+  828  ls
+  829  cd 
+  830  cd docker/jenkins
+  831  ls
+  832  cd maven/
+  833  ls
+  834  git push -u origin master
+  835  cd /srv/gitlab/data/git-data/
+  836  cd /srv/gitlab/data/
+  837  history | grep git
+  838  cd ../
+  839  cd 
+  840  cd docker/jenkins
+  841  ls
+  842  cd jenkins-ansible/
+  843  ls
+  844  l s-l
+  845  ll
+  846  cd ../
+  847  ls
+  848  cd my-scripts/
+  849  ls
+  850  cd ../
+  851  ls
+  852  cd jenkins
+  853  ls
+  854  cd jenkins_home/
+  855  ls
+  856  cd ansible/
+  857  ls
+  858  vi crumb
+  859  vi crumb.sh 
+  860  clear
+  861  ls
+  862  vi crumb
+  863  vi crumb1.sh 
+  864  vi crumb.sh 
+  865  cd .../
+  866  cd ../../
+  867  cd maven/
+  868  ls
+  869  cat .git/config 
+  870  vi src/main/java/com/mycompany/app/App.java 
+  871  grep -R Hello
+  872  vi src/main/java/com/mycompany/app/App.java 
+  873  vi src/test/java/com/mycompany/app/AppTest.java:
+  874  vi src/test/java/com/mycompany/app/AppTest.java
+  875  vi src/main/java/com/mycompany/app/App.java 
+  876  vi src/test/java/com/mycompany/app/AppTest.java
+  877  clear
+  878  git add src/
+  879  git commit -m "changed mesg"
+  880  git push -u origin master
+  881  ls
+  882  grep -R Hello
+  883  vi src/main/java/com/mycompany/app/App.java
+  884  vi src/test/java/com/mycompany/app/AppTest.java:
+  885  vi src/test/java/com/mycompany/app/AppTest.java
+  886  git commit -m "changed mesg"
+  887  cd ../jenkins_home/work
+  888  cd ../jenkins_home/workspace/
+  889  ls
+  890  cd 10.Maven-my-git
+  891  ls
+  892  cd target/
+  893  ls
+  894  pwd
+  895  cd 
+  896  cd docker/jenkins
+  897  ls
+  898  cd maven/
+  899  ls
+  900  git rev-parse --git-dir
+  901  git status
+  902  git rev-parse --is-inside-work-tree
+  903  git status
+  904  git rev-parse --git-dir
+  905  cd .git/
+  906  ls
+  907  ls -lrt
+  908  git rev-parse --is-inside-work-tree
+  909  cd logs/
+  910  ls
+  911  cat HEAD 
+  912  cd ../
+  913  ls
+  914  cat HEAD 
+  915  cat description 
+  916  cd ../
+  917* 
+  918  git status
+  919  git add src/
+  920  git commit -m "changed mesg"
+  921  git push -u origin master
+  922  history | grep git
+  923  grep -r Hello
+  924  ls
+  925  vi commit
+  926  chmod +x commit 
+  927  ls
+  928  vi src/main/java/com/mycompany/app/App.java
+  929  vi src/test/java/com/mycompany/app/AppTest.java
+  930  clear
+  931  ./commit 
+  932  clear
+  933  vi src/main/java/com/mycompany/app/App.java
+  934  vi src/test/java/com/mycompany/app/AppTest.java
+  935  ./commit 
+  936  vi src/main/java/com/mycompany/app/App.java
+  937  vi src/test/java/com/mycompany/app/AppTest.java
+  938  ./commit 
+  939  vi src/main/java/com/mycompany/app/App.java
+  940  vi src/test/java/com/mycompany/app/AppTest.java
+  941  ./commit 
+  942  vi src/main/java/com/mycompany/app/App.java
+  943  vi src/test/java/com/mycompany/app/AppTest.java
+  944  ./commit 
+  945  su -
+  946  vi src/main/java/com/mycompany/app/App.java
+  947  vi src/test/java/com/mycompany/app/AppTest.java
+  948  ./commit 
+  949  ls
+  950  cd .git/
+  951  ls
+  952  cd hooks/
+  953  ls
+  954  cd ../../
+  955  git git-receive-pack
+  956  vi src/main/java/com/mycompany/app/App.java
+  957  vi src/test/java/com/mycompany/app/AppTest.java
+  958  ./commit 
+  959  vi src/main/java/com/mycompany/app/App.java
+  960  vi src/test/java/com/mycompany/app/AppTest.java
+  961  clear
+  962  ./commit 
+  963  vi src/main/java/com/mycompany/app/App.java
+  964  vi src/test/java/com/mycompany/app/AppTest.java
+  965  ./commit 
+  966  cd /srv/gitlab/data/git-data/
+  967  sudo cd /srv/gitlab/data/git-data/
+  968  cd /srv/gitlab/data/
+  969  ls
+  970  ls -l
+  971  sudo root
+  972  sudo -
+  973  su -
+  974  cd 
+  975  cd docker/jenkins
+  976  ls
+  977  cp -r /tmp/custom_hooks/ .
+  978  cd custom_hooks/
+  979  ls
+  980  ls -l
+  981  vi post-receive 
+  982  cd ../
+  983  clear
+  984  ls
+  985  cp docker-compose.yml bakup/docker-compose.yml.git
+  986  cd ../jenkins-resources-master/
+  987  ls
+  988  cd jenkins/
+  989  ls
+  990  cd dsl/
+  991  ls
+  992  cd ../
+  993  cp -r dsl/ ../../jenkins/
+  994  cd ../../jenkins
+  995  ls
+  996  cd dsl/
+  997  ls
+  998  vi job.j2 
+  999  cat description.j2 
+ 1000  clear
+ 1001  ls
+ 1002  cat parameters.j2 
+ 1003  cat scm.j2 
+ 1004  cat triggers.j2 
+ 1005  clear
+ 1006  ls
+ 1007  cat steps.j2 
+ 1008  cat mailer.j2 
+ 1009  clear
+ 1010  ls
+ 1011  cat ansible.j2 
+ 1012  ls
+ 1013  vi ansible.j2 
+ 1014  cat ansible.j2 
+ 1015  vi ansible.j2 
+ 1016  clear
+ 1017  vi maven.j2 
+ 1018  cd ../
+ 1019  ls
+ 1020  cp -r dsl/ jenkins_home/
+ 1021  cd -
+ 1022  ls
+ 1023  ls -lrt
+ 1024  history | grep git clone
+ 1025  history | grep git
+ 1026  git clone http://manju:12345678@gitlab.example.com/jenkins/dsl-jobs.git
+ 1027  ls
+ 1028  cd ../
+ 1029  git clone http://manju:12345678@gitlab.example.com/jenkins/dsl-jobs.git
+ 1030  ls -lrt
+ 1031  cd dsl/
+ 1032  git clone http://manju:12345678@gitlab.example.com:8090/jenkins/dsl-jobs.git
+ 1033  ls
+ 1034  cd ../
+ 1035  ls
+ 1036  git clone http://manju:12345678@gitlab.example.com:8090/jenkins/dsl-jobs.git
+ 1037  ls
+ 1038  git clone http://manjuhr:12345678@gitlab.example.com:8090/jenkins/dsl-jobs.git
+ 1039  ls
+ 1040  cd dsl-jobs/
+ 1041  ls
+ 1042  vi jobs
+ 1043  cd ../../
+ 1044  ls
+ 1045  cd dsl
+ 1046  cd jenkins/dsl
+ 1047  ls
+ 1048  ls -lrt
+ 1049  vi maven.j2 
+ 1050  vi job.j2 
+ 1051  vi ansible.j2 
+ 1052  vi maven.j2 
+ 1053  clear
+ 1054  docker ps
+ 1055  docker exec -ti jenkins_git_1 bash
+ 1056  vi jobs 
+ 1057  cp jobs  ../dsl-jobs/
+ 1058  cd ../dsl-jobs/
+ 1059  git add jobs 
+ 1060  git commit -m "corrected"
+ 1061  git push -u origin master
+ 1062  cp jobs ../jenkins_home/dsl/
+ 1063  cat jobs 
+ 1064  vi jobs 
+ 1065  clear
+ 1066  cat jobs 
+ 1067  docker exec -ti jenkins_git_1 bash
+ 1068  vi jobs 
+ 1069  git add jobs 
+ 1070  git commit -m "corrected"
+ 1071  git push -u origin master
+ 1072  cd ../
+ 1073  ls
+ 1074  cd ../jenkins-resources-master/
+ 1075  ls
+ 1076  mv jenkins/* .
+ 1077  ls
+ 1078  cd jenkins
+ 1079  ls
+ 1080  cd ../
+ 1081  rm -rf jenkins
+ 1082  clear
+ 1083  ls
+ 1084  cd pipeline
+ 1085  ls
+ 1086  ll
+ 1087  cat Jenkinsfile 
+ 1088  cd ../
+ 1089  ls
+ 1090  cd pipeline
+ 1091  cd ../pipeline-templates/
+ 1092  ls
+ 1093  ls -l
+ 1094  cd -
+ 1095  ls
+ 1096  cd ../
+ 1097  cp -r pipeline ../jenkins/
+ 1098  cd ../jenkins
+ 1099  ls
+ 1100  cd pipeline/
+ 1101  vi first-pipeline
+ 1102  clear
+ 1103  ll
+ 1104  ls
+ 1105  cp retry timeout
+ 1106  vi timeout 
+ 1107  vi env
+ 1108  cp env creds
+ 1109  vi creds 
+ 1110  top
+ 1111  clear
+ 1112  ls
+ 1113  cp retry postaction
+ 1114  vi postaction 
+ 1115  vi creds 
+ 1116  cd ../
+ 1117  ls
+ 1118  docker-compose stop
+ 1119  vi readme.txt
+ 1120  cd ../
+ 1121  ls
+ 1122  mkdir dockerMastery
+ 1123  cd dockerMastery/
+ 1124  ls
+ 1125  clear
+ 1126  docker version
+ 1127  docker info
+ 1128  docker
+ 1129  docker | less
+ 1130  docker images
+ 1131  docker container run --publish 90:90 nginx
+ 1132  docker container run --publish 80:80 nginx
+ 1133  docker container run --publish 90:80 nginx
+ 1134  docker container run --publish 90:80 --detach nginx 
+ 1135  docker container ls
+ 1136  docker container ls -a
+ 1137  docker container ls
+ 1138  docker container distracted_shtern stop
+ 1139  docker container ls
+ 1140  docker container stop
+ 1141  docker container stop 61c79c7cc26c
+ 1142  docker container ls
+ 1143  docker container rm -rf  61c79c7cc26c
+ 1144  docker container rm -f  61c79c7cc26c
+ 1145  cd ../
+ 1146  ls
+ 1147  mkdr docKubCom
+ 1148  mkdir docKubCom
+ 1149  clear
+ 1150  ls
+ 1151  mv redis-image/ simpleweb/ node-js/ docKubCom/
+ 1152  cd docKubCom/
+ 1153  ls
+ 1154  ls -l
+ 1155  mkdir visits
+ 1156  cd visits/
+ 1157  ls
+ 1158  docker build .
+ 1159  docker build -t visits:latest .
+ 1160  docker run visits:latest
+ 1161  docker build -t visits:latest .
+ 1162  docker run visits:latest
+ 1163  docker run redis
+ 1164  clear
+ 1165  ll
+ 1166  docker-compose up
+ 1167  docker-compose stop
+ 1168  docker-compose up
+ 1169  docker-compose build .
+ 1170  docker-compose build -t
+ 1171  docker-compose build -d
+ 1172  docker-compose 
+ 1173  docker-compose build
+ 1174  docker-compose up -d
+ 1175  docker ps
+ 1176  vi start.sh
+ 1177  vi stop.sh
+ 1178  chmod + start.sh stop.sh 
+ 1179  ./stop.sh
+ 1180  chmod +x start.sh stop.sh 
+ 1181  ./stop.sh 
+ 1182  clear
+ 1183  ls -lrt
+ 1184  docker-compose up --build
+ 1185  ./stop.sh 
+ 1186  ./start.sh 
+ 1187  ./stop.sh 
+ 1188  ./start.sh 
+ 1189  ./stop.sh 
+ 1190  docker ps
+ 1191  vi start.sh 
+ 1192  ./start.sh 
+ 1193  clear
+ 1194  ll
+ 1195  uname
+ 1196  uname -a
+ 1197  cd ../node-js/
+ 1198  ls
+ 1199  node -v
+ 1200  cd ../
+ 1201  ls
+ 1202  create-react-app frontend
+ 1203  vi help.txt
+ 1204  ls
+ 1205  cd frontend/
+ 1206  ls
+ 1207  npm run test
+ 1208  npm run test --watchAll
+ 1209  npm run build
+ 1210  ls
+ 1211  ls build/
+ 1212  ls build/static/
+ 1213  ls
+ 1214  cd build/
+ 1215  ls
+ 1216  cd ../
+ 1217  npm run start
+ 1218  docker build .
+ 1219  docker build -f Dockerfile.dev 
+ 1220  docker build -f Dockerfile.dev .
+ 1221  ls
+ 1222  mv node_modules/ node_modules.bak
+ 1223  docker build -f Dockerfile.dev .
+ 1224  docker run e5d2ae030524
+ 1225  docker run -p 3000:3000 e5d2ae030524
+ 1226  docker run -it -p 3000:3000 e5d2ae030524
+ 1227  pwd
+ 1228  docker run -it -p 3000:3000 ce5d2ae030524
+ 1229  docker build -f Dockerfile.dev .
+ 1230  docker run -it -p 3000:3000 -v $(pwd):/app ce5d2ae030524
+ 1231  docker run -it -p 3000:3000 -v $(pwd):/app e7b4deba0780
+ 1232  docker run -it -p 3000:3000 -v $(PWD):/app e7b4deba0780
+ 1233  docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app e7b4deba0780
+ 1234  ls
+ 1235  history | tee docker-history.txt
